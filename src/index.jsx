@@ -1,6 +1,6 @@
 import { h, render, Component } from 'preact';
-import { products } from './data'
-import { ProductGrid } from './product-grid'
+import { products } from './data/data'
+import { ProductGrid } from './components/product-grid'
 
 class App extends Component {
     render() {
