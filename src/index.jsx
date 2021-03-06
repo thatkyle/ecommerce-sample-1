@@ -12,4 +12,5 @@ class App extends Component {
     }
 }
 
-render(<App />, document.body)
+const root = document.querySelector('#root')
+render(<App />, root)
