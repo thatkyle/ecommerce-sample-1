@@ -13,6 +13,11 @@ const useStyles = makeStyles((theme) => ({
         width: '100px',
         height: '100px',
         objectFit: 'scale-down'
+    },
+    p: {
+        whiteSpace: 'nowrap',
+        overflow: 'hidden',
+        textOverflow: 'ellipsis'
     }
 }));
 
@@ -22,7 +27,18 @@ export default function ProductGridItem(props) {
     return (
         <Grid item xs={3}>
             <Paper className={classes.paper}>
-                <img className={classes.img} src={product.image}></img>
+                <img 
+                    className={classes.img} 
+                    src={product.image} 
+                    alt={product.title} 
+                    title={product.title}
+                />
+                <p className={classes.p}>
+                    {product.title}
+                </p>
+                <p>
+                    ${product.price.toFixed(2)}
+                </p>
             </Paper>
         </Grid>
     );
