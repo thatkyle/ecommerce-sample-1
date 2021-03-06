@@ -5,7 +5,7 @@ module.exports = {
     "react-dom": "preact/compat"
   },
   mount: {
-    /* ... */
+    "src": "/"
   },
   plugins: [
     /* ... */

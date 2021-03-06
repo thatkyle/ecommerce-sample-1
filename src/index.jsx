@@ -1,6 +1,4 @@
 import { h, render, Component } from 'preact';
-import AutoGrid from './grid'
-import { NumberList, numbers } from './list'
 import { products } from './data'
 import { ProductGrid } from './product-grid'
 
