@@ -12,7 +12,7 @@ class App extends Component {
                 <Header />
                 <SearchBar />
                 <Menu />
-                <ProductGrid products={products}/>
+                <ProductGrid products={products} />
             </div>
         )
     }

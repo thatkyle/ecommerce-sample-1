@@ -8,7 +8,7 @@ export function ProductGrid(props) {
         <ProductGridItem product={product}/>
     );
     return (
-        <Grid container spacing={3}>
+        <Grid container spacing={3} style="max-width:1400px; margin:auto;">
             {listItems}
         </Grid>
     );
