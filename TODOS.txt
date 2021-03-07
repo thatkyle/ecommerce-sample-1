@@ -1,0 +1,1 @@
+Fix phone and tablet styles

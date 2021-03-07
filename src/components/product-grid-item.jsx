@@ -12,10 +12,13 @@ const useStyles = makeStyles((theme) => ({
       borderBottom: "2px solid black",
       marginBottom: "-2px"
     },
+    height: "20vw",
+    maxHeight: "270px",
+    minHeight: "200px",
   },
   img: {
-    width: '200px',
-    height: '200px',
+    width: '90%',
+    height: '80%',
     objectFit: 'scale-down'
   },
   p: {
@@ -31,7 +34,7 @@ export default function ProductGridItem(props) {
   const classes = useStyles();
   const product = props.product;
   return (
-    <Grid item xs={3}>
+    <Grid item xs={5} md={3} sm={4}>
       <Paper className={classes.paper}>
         <img
           className={classes.img}
