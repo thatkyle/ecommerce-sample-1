@@ -4,6 +4,7 @@
     "deploy:local": "snowpack build && start http://localhost:5000 && npx serve build"
   },
   "devDependencies": {
+    "@snowpack/plugin-webpack": "^2.3.0",
     "snowpack": "^3.0.1"
   },
   "dependencies": {
