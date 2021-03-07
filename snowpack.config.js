@@ -15,5 +15,6 @@ module.exports = {
         'manifest': true,
       },
     ],
+    "@prefresh/snowpack",
   ],
 };
