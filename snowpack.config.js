@@ -8,13 +8,7 @@ module.exports = {
     'src': '/'
   },
   'plugins': [
-    [
-      '@snowpack/plugin-webpack',
-      {
-        'sourceMap': true,
-        'manifest': true,
-      },
-    ],
+    '@snowpack/plugin-webpack',
     "@prefresh/snowpack",
   ],
 };

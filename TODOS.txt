@@ -1,1 +1,3 @@
-Fix phone and tablet styles
+Fix phone and tablet styles (nest media queries inside css class blocks)
+Fix header logo scaling and set max and mins
+Prevent account and cart icons from overflowing on phone

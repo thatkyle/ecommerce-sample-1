@@ -1,7 +1,8 @@
 {
   "scripts": {
     "dev": "snowpack dev",
-    "deploy:local": "snowpack build && start http://localhost:5000 && npx serve build"
+    "deploy:local": "snowpack build && start http://localhost:5000 && npx serve build && node ./graphql.mjs",
+    "graphql": "node ./graphql.mjs && start http://localhost:4000"
   },
   "devDependencies": {
     "@prefresh/snowpack": "^3.1.0",
@@ -9,8 +10,12 @@
     "snowpack": "^3.0.1"
   },
   "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.8.0",
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
+    "express": "^4.17.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.5.0",
     "preact": "^10.5.12",
     "preact-render-to-string": "^5.1.12",
     "preact-router": "^3.2.1"
